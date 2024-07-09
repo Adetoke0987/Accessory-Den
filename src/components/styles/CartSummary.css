@@ -1,0 +1,24 @@
+/* src/components/styles/CartSummary.css */
+.cart-summary {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .cart-summary h2 {
+    margin-bottom: 10px;
+  }
+  
+  .cart-summary ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart-summary ul li {
+    margin-bottom: 10px;
+  }
+  
+  .cart-summary h3 {
+    margin-top: 20px;
+  }
+  

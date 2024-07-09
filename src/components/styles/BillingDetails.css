@@ -1,0 +1,20 @@
+/* src/components/styles/BillingDetails.css */
+.billing-details {
+    margin-bottom: 20px;
+  }
+  
+  .billing-details h2 {
+    margin-bottom: 10px;
+  }
+  
+  .billing-details form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .billing-details form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+  }
+  

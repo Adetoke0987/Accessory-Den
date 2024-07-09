@@ -1,33 +1,39 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './styles/ShoppingCart.css';
 
 const ShoppingCart = () => {
-  // Sample products in cart
   const initialCart = [
     { id: 1, image: 'path/to/image1', description: 'Eclipse Chrono', price: 45000, quantity: 1 },
     { id: 2, image: 'path/to/image2', description: 'Luxe Timepiece', price: 60000, quantity: 1 },
   ];
 
   const [cart, setCart] = useState(initialCart);
+  const navigate = useNavigate();
 
   const handleQuantityChange = (id, delta) => {
-    setCart(prevCart => prevCart.map(product =>
-      product.id === id
-        ? { ...product, quantity: Math.max(1, product.quantity + delta) }
-        : product
-    ));
+    setCart(prevCart =>
+      prevCart.map(product =>
+        product.id === id
+          ? { ...product, quantity: Math.max(1, product.quantity + delta) }
+          : product
+      )
+    );
   };
 
   const calculateSubtotal = () => {
     return cart.reduce((acc, product) => acc + product.price * product.quantity, 0);
   };
 
+  const handleCheckout = () => {
+    navigate('/checkout');
+  };
+
   return (
     <div className="shopping-cart">
       <nav className="breadcrumb">
         <Link to="/">Products</Link> &gt; 
-        <Link to="/product/:productId"> Product Details</Link> &gt; 
+        <Link to="/product/:productId">Product Details</Link> &gt; 
         <span>Shopping Cart</span>
       </nav>
       <h1>Shopping Cart</h1>
@@ -57,7 +63,36 @@ const ShoppingCart = () => {
           ))}
         </tbody>
       </table>
-      <h2>Total: {calculateSubtotal().toLocaleString()}</h2>
+
+      {/* New Information */}
+      <div className="summary-row">
+        <div className="summary-item">
+          <span>Discount</span>
+          <span>₦0.00</span>
+        </div>
+        <div className="summary-item">
+          <span>Delivery</span>
+          <span>₦1,500.00</span>
+        </div>
+        <div className="summary-item">
+          <span>Subtotal</span>
+          <span>{calculateSubtotal().toLocaleString()}</span>
+        </div>
+        <div className="summary-item">
+          <span>Total</span>
+          <span>{(calculateSubtotal() + 1500).toLocaleString()}</span>
+        </div>
+      </div>
+
+      {/* Coupon and Checkout */}
+      <div className="coupon-checkout">
+        <div className="coupon">
+          <label htmlFor="coupon-code">Coupon Code:</label>
+          <input type="text" id="coupon-code" placeholder="Enter coupon code" />
+          <button className="apply-coupon">Apply Coupon</button>
+        </div>
+        <button onClick={handleCheckout}>Checkout</button>
+      </div>
     </div>
   );
 };

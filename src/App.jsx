@@ -6,7 +6,7 @@ import Products from './components/Products';
 import Footer from './components/Footer';
 import ProductDescription from './components/ProductDescription';
 import ShoppingCart from './components/ShoppingCart';
-
+import Checkout from './components/Checkout'; // Import Checkout component
 import './App.css';
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
           <Route path="/" element={<MainLayout />} />
           <Route path="/product/:productId" element={<ProductDescriptionLayout />} />
           <Route path="/cart" element={<ShoppingCartLayout />} />
+          <Route path="/checkout" element={<CheckoutLayout />} /> {/* Add Checkout route */}
         </Routes>
         <Footer /> {/* Footer outside Routes to show on all pages */}
       </div>
@@ -38,9 +39,14 @@ const ProductDescriptionLayout = () => (
   <ProductDescription />
 );
 
-
+// ShoppingCartLayout component to include only ShoppingCart
 const ShoppingCartLayout = () => (
   <ShoppingCart />
+);
+
+// CheckoutLayout component to include only Checkout
+const CheckoutLayout = () => (
+  <Checkout />
 );
 
 export default App;

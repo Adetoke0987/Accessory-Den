@@ -1,0 +1,143 @@
+.checkout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: black;
+}
+
+.checkout-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 20px;
+}
+
+.billing-details {
+  width: 48%;
+  padding: 20px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 5px; */
+}
+
+.cart-summary {
+  width: 38%;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10%;
+}
+
+.form-control {
+  margin-bottom: 20px;
+  width: 48%;
+}
+
+.form-controll {
+  margin-bottom: 20px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-controll input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.item-details {
+  display: flex;
+}
+
+.item-details img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-total {
+  text-align: right;
+}
+
+.payment-method button {
+  width: 50%;
+  padding: 15px;
+  border: none;
+  border-radius: 16px;
+  background-color: #0B7D6A;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.payment-method button:hover {
+  background-color: #0056b3;
+}
+
+.checkbox-label-container {
+  display: flex;
+  align-items: center;
+}
+
+/* .credit-card-input {
+  padding: 10px 40px 10px 10px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  background-image: url('/src/assets/mast.png'); 
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain; 
+} */
+
+.credit-card-input {
+  padding: 10px 40px 10px 10px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  background-image: url('/src/assets/credit.png'), url('/src/assets/mast.png'); 
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc(95% - 25px) center, right center;
+  background-size: contain, contain; 
+}
+
+
+
+.credit-card-input:focus {
+  outline: none;
+  border-color: #007bff; 
+}

@@ -1,0 +1,14 @@
+/* src/components/styles/PaymentMethod.css */
+.payment-method {
+    margin-top: 20px;
+  }
+  
+  .payment-method h2 {
+    margin-bottom: 10px;
+  }
+  
+  .payment-method form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
