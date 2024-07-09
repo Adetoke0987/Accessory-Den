@@ -1,0 +1,83 @@
+.productsSection {
+  padding: 40px;
+  width: 30rem; /* Fixed width of the products section */
+  height: auto; /* Allow height to adjust based on content */
+  top: 751px;
+  left: 70px;
+  gap: 80px;
+  opacity: 1; /* Adjusted opacity to make it visible */
+}
+
+.productsTitle {
+  font-family: 'Satoshi Variable';
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 48.6px;
+  margin-bottom: 20px;
+  color: #313131;
+}
+
+.productsList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns layout */
+  gap: 80px; /* Gap between product cards */
+}
+
+.productCard {
+  width: 180px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.productImage {
+  width: 176px;
+  height: 130px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.productName {
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.productRating {
+  color: #f2b01e;
+  font-size: 14px;
+  margin-bottom: 5px;
+  margin-left: 10px;
+}
+
+.productCollection {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.productPrice {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+.productButton {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0B7D6A;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.starFilled {
+  color: #f2b01e;
+}
+
+.starEmpty {
+  color: #e0e0e0;
+}

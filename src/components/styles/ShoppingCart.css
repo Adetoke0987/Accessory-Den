@@ -1,0 +1,51 @@
+/* src/components/styles/ShoppingCart.css */
+.shopping-cart {
+    padding: 20px;
+  }
+  
+  .shopping-cart h1 {
+    margin-bottom: 20px;
+  }
+  
+  .shopping-cart table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .shopping-cart th, .shopping-cart td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .shopping-cart th {
+    background-color: #f2f2f2;
+  }
+  
+  .shopping-cart img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .shopping-cart button {
+    margin: 0 5px;
+  }
+  
+  /* styles/ShoppingCart.css */
+.breadcrumb {
+    margin-bottom: 20px;
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  
+  .breadcrumb span {
+    color: #6c757d;
+  }
+  

@@ -1,0 +1,48 @@
+/* src/styles/Hero.css */
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(97.17deg, #FFFFFF 3.52%, #FFFFFF 4.39%, #F3F8FB 31.22%, #F3F8FB 52.9%);
+    padding: 40px;
+    width: 65.5rem;
+    height: 25rem;
+    margin-left: 2.5rem;
+    
+    border-radius: 24px;
+   
+  }
+  
+  .hero-content {
+    
+    color: black;
+    
+
+  }
+  
+  .hero-content h1 {
+    font-family: 'Satoshi Variable';
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48.6px;
+    max-width: 450px;
+    margin-bottom: 20px;
+    width: 542px;
+    height: 98px;
+    top: 257px;
+    left: 160px;
+    gap: 0px;
+    opacity: 0px;
+  }
+  
+  .hero-button {
+    width: 165px;
+    height: 51px;
+    padding: 16px 50px;
+    border-radius: 16px;
+    background-color: #0B7D6A;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+  }
+  
