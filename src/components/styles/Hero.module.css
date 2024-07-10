@@ -42,33 +42,41 @@
   border: none;
 }
 
-@media (max-width: 992px) {
-  .hero-section {
-    width: 50%;
-    padding: 20px;
-  }
-}
-
 @media (max-width: 768px) {
   .hero-section {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 70%;
-    padding: 20px;
-  }
-
-  .hero-content h1 {
-    max-width: 70%;
-    margin-bottom: 15px;
+    width: 90%; 
+    height: auto; 
+    padding: 20px; 
+    margin: 5% 0; 
+    border-radius: 12px; 
+    margin-top: 8%;
   }
 
   .hero-section img {
-    width: 70%;
-    margin-top: 20px;
+    width: 155px; 
+    height: 144px; 
+    border-radius: 12px 0 0 0; 
   }
 
-  .hero-button {
-    margin-top: 15px;
+  .hero-content h1 {
+    font-family: 'Satoshi Variable';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 27px;
+    max-width: 180px;
+    margin-bottom: 20px;
   }
+  
+  .hero-button {
+    width: 101px; /* Reduced width */
+    height: 31px; /* Reduced height */
+    padding: 8px 25px; /* Adjusted padding for text alignment */
+    border-radius: 16px;
+    background-color: #0B7D6A;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 12px;
+  }
+  
 }

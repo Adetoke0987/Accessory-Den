@@ -25,7 +25,7 @@ const ProductCard = ({ id, image, name, rating, collection, price }) => {
         <span className={styles.productRating}>{renderStars()}</span>
       </div>
       <div className={styles.productCollection}>{collection}</div>
-      <div className={styles.productPrice}>{price}</div>
+      <div className={styles.productPrice}>NGN{price}</div>
       <button className={styles.productButton}>Add to Cart</button>
     </div>
   );

@@ -1,6 +1,6 @@
 .footer {
-    width: 78.9rem; 
-    height: 24.875rem; 
+    width: 100%; 
+    height: 398px; 
     background: #0b7d6a1a;
     display: flex;
     justify-content: space-around;
@@ -77,119 +77,28 @@
     text-decoration: underline;
   }
   
+   
+  @media (max-width: 768px), (max-width: 1200px) {
+    .footer {
+      width: 100%; 
+      height: 598px; 
+      background: #0b7d6a1a;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      top: 1750vh;
+    }
 
-  @media (max-width: 1200px) {
-    .footer {
-      width: 70rem;
-      height: auto;
+    .footer-inner {
+      width: 46.29rem; 
+      height: 12.9375rem; 
+      background: white; 
+      display: flex;
       flex-direction: column;
       align-items: flex-start;
-      padding: 2rem;
+      padding: 2rem; 
+      margin-bottom: 40%;
     }
-  
-    .footer-inner {
-      width: 100%;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-  
-    .footer-section {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .footer {
-      width: 60rem;
-      padding: 1.5rem;
-    }
-  
-    .footer-inner {
-      padding: 1.5rem;
-    }
-  
-    .footer-logo {
-      font-size: 22px;
-    }
-  
-    .footer-description {
-      font-size: 0.9rem;
-    }
-  
-    .footer-links h3 {
-      font-size: 1.1rem;
-    }
-  
-    .footer-links a {
-      font-size: 0.9rem;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .footer {
-      width: 50rem;
-      padding: 1rem;
-    }
-  
-    .footer-inner {
-      padding: 1rem;
-    }
-  
-    .footer-logo {
-      font-size: 20px;
-    }
-  
-    .footer-description {
-      font-size: 0.85rem;
-    }
-  
-    .footer-links h3 {
-      font-size: 1rem;
-    }
-  
-    .footer-links a {
-      font-size: 0.85rem;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .footer {
-      width: 100%;
-      padding: 0.5rem;
-      align-items: flex-start;
-    }
-  
-    .footer-inner {
-      width: 100%;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 0.5rem;
-    }
-  
-    .footer-section {
-      width: 100%;
-      gap: 0.5rem;
-    }
-  
-    .footer-logo {
-      font-size: 18px;
-    }
-  
-    .footer-description {
-      font-size: 0.75rem;
-    }
-  
-    .footer-social-media img {
-      width: 1.5rem;
-      height: 1.5rem;
-    }
-  
-    .footer-links h3 {
-      font-size: 0.9rem;
-    }
-  
-    .footer-links a {
-      font-size: 0.75rem;
-    }
-  }
-  
+  } 
+    
