@@ -26,6 +26,20 @@ const Products = () => {
     { id: 16, image: Stellar, name: 'Stellar Model', rating: 4, collection: 'Stellar performance', price: '55,000' }
   ];
 
+  const similarItems = [
+    { id: 21, image: Luxe, name: 'Luxe Timepiece', rating: 4, collection: 'Luxurious, minimalist', price: '60,000' },
+    { id: 22, image: Urban, name: 'Urban Watch', rating: 4, collection: 'Urban sleek design', price: '50,000' },
+    { id: 3, image: Urban, name: 'Urban Watch', rating: 4, collection: 'Urban sleek design', price: '50,000' },
+    { id: 4, image: Stellar, name: 'Stellar Model', rating: 4, collection: 'Stellar performance', price: '55,000' },
+  ];
+
+  const recentlyViewedItems = [
+    { id: 31, image: Stellar, name: 'Stellar Model', rating: 4, collection: 'Stellar performance', price: '55,000' },
+    { id: 32, image: Eclipse, name: 'Eclipse Chrono', rating: 4, collection: 'Sleek modern chronograph', price: '45,000' },
+    { id: 3, image: Urban, name: 'Urban Watch', rating: 4, collection: 'Urban sleek design', price: '50,000' },
+    { id: 4, image: Stellar, name: 'Stellar Model', rating: 4, collection: 'Stellar performance', price: '55,000' },
+  ];
+
   return (
     <section id="target-section" className={styles.productsSection}>
       <h2 className={styles.productsTitle}>Wristwatch for you!</h2>
@@ -34,6 +48,23 @@ const Products = () => {
           <ProductCard key={product.id} {...product} />
         ))}
       </div>
+      <section className={styles.similarItemsSection}>
+        <h2>Similar Items You Might Like</h2>
+        <div className={styles.productsList}>
+          {similarItems.map((item) => (
+            <ProductCard key={item.id} {...item} />
+          ))}
+        </div>
+      </section>
+
+      <section className={styles.recentlyViewedSection}>
+        <h2>Recently Viewed Items</h2>
+        <div className={styles.productsList}>
+          {recentlyViewedItems.map((item) => (
+            <ProductCard key={item.id} {...item} recentlyViewed />
+          ))}
+        </div>
+      </section>
     </section>
   );
 };

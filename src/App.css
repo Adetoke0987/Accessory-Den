@@ -1,14 +1,20 @@
 body {
-    color: white;
-    margin: 0;
-    padding: 0;
-  }
+  color: black;
+  margin: 0;
+  padding: 0;
+  /* width: 100vw; */
+  height: 261.11vh;
+}
+
   
   @font-face {
     font-family: 'Amug';
     src: url('fonts/Amug-Regular.woff2') format('woff2'),
          url('fonts/Amug-Regular.woff') format('woff');
-    /* Add more src declarations for different file formats if needed */
-    font-weight: normal; /* or specify other weights if necessary */
-    font-style: normal; /* or specify other styles if necessary */
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+.title-logo{
+  font-family: 'Amug';
 }
