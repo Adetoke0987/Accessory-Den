@@ -1,4 +1,4 @@
-/* src/styles/Hero.css */
+
 .hero-section {
     display: flex;
     justify-content: space-around;
@@ -14,10 +14,7 @@
   }
   
   .hero-content {
-    
     color: black;
-    
-
   }
   
   .hero-content h1 {
@@ -44,5 +41,47 @@
     color: #fff;
     cursor: pointer;
     border: none;
+  }
+  
+
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .hero-content h1 {
+      max-width: 70%;
+      margin-bottom: 15px;
+      margin-left: 15%;
+    }
+  
+    .hero-button {
+      margin-top: 15px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .hero-section {
+      width: 50%;
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-section {
+      width: 70%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hero-section {
+      width: 70%;
+    }
+  
+    .hero-section img {
+      margin-top: 20px; 
+    }
   }
   

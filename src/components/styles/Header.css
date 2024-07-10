@@ -17,6 +17,15 @@
   color: #0B7D6A;
 }
 
+.header-link{
+  text-decoration: none;  
+}
+
+.header-logo:hover {
+  text-decoration: none;  
+  color: blue;
+}
+
 .header-nav {
   display: flex;
   gap: 20px;
@@ -37,4 +46,138 @@
 
 .icon-label {
   margin-left: 0.5em; 
+}
+
+.custom-link {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.custom-link:hover {
+  text-decoration: none; 
+  color: blue; 
+}
+
+@media (max-width: 1200px) {
+  .header {
+    width: 60rem;
+    padding: 15px;
+  }
+
+  .header-logo {
+    font-size: 22px;
+    width: 160px;
+    line-height: 36px;
+  }
+
+  .header-nav {
+    gap: 15px;
+  }
+
+  .header-icons {
+    gap: 15px;
+  }
+
+  .icon-label {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    width: 50rem;
+    padding: 10px;
+  }
+
+  .header-logo {
+    font-size: 20px;
+    width: 140px;
+    line-height: 32px;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .header-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .icon-label {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-logo {
+    font-size: 18px;
+    width: 120px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .header-nav a {
+    font-size: 14px;
+  }
+
+  .header-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .header-icons .icon-label {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .header {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .header-logo {
+    font-size: 16px;
+    width: 100px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .header-nav a {
+    font-size: 12px;
+  }
+
+  .header-icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .header-icons .icon-label {
+    display: none;
+  }
 }

@@ -4,3 +4,11 @@ body {
     padding: 0;
   }
   
+  @font-face {
+    font-family: 'Amug';
+    src: url('fonts/Amug-Regular.woff2') format('woff2'),
+         url('fonts/Amug-Regular.woff') format('woff');
+    /* Add more src declarations for different file formats if needed */
+    font-weight: normal; /* or specify other weights if necessary */
+    font-style: normal; /* or specify other styles if necessary */
+}

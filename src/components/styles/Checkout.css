@@ -17,8 +17,6 @@
 .billing-details {
   width: 48%;
   padding: 20px;
-  /* border: 1px solid #ccc; */
-  /* border-radius: 5px; */
 }
 
 .cart-summary {
@@ -113,17 +111,6 @@ h2 {
   align-items: center;
 }
 
-/* .credit-card-input {
-  padding: 10px 40px 10px 10px; 
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: white;
-  background-image: url('/src/assets/mast.png'); 
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: contain; 
-} */
-
 .credit-card-input {
   padding: 10px 40px 10px 10px; 
   border: 1px solid #ccc;
@@ -141,3 +128,38 @@ h2 {
   outline: none;
   border-color: #007bff; 
 }
+
+
+@media (max-width: 992px) {
+  .checkout-content {
+    flex-direction: column;
+  }
+
+  .billing-details,
+  .cart-summary {
+    width: 100%;
+  }
+
+  .form-group {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-control {
+    width: 100%;
+  }
+
+  .form-control + .form-control {
+    margin-top: 10px;
+  }
+
+  .payment-method button {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .credit-card-input {
+    background-position: calc(100% - 25px) center, right center;
+  }
+}
+

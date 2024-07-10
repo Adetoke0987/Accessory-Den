@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/footer.css';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'; // Import icons from react-icons
+import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa'; 
 
 const Footer = () => {
   return (
@@ -12,10 +12,16 @@ const Footer = () => {
             Our passion lies in curating a collection of premium wristwatches and accessories that speak to the modern gentleman's taste and lifestyle.
           </p>
           <div className="footer-social-media">
-            <FaFacebook size={24} color="#3b5998" />
-            <FaTwitter size={24} color="#00acee" />
-            <FaInstagram size={24} color="#C13584" />
-          </div>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+          <FaFacebook size={24} color="#3b5998" />
+        </a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+          <FaTwitter size={24} color="#00acee" />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+          <FaInstagram size={24} color="#C13584" />
+        </a>
+      </div>
         </div>
         <div className="footer-links">
           <h3>My Account</h3>

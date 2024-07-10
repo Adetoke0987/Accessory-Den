@@ -13,20 +13,21 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header /> {/* Header outside Routes to show on all pages */}
+        <Header /> 
         <Routes>
           <Route path="/" element={<MainLayout />} />
           <Route path="/product/:productId" element={<ProductDescriptionLayout />} />
           <Route path="/cart" element={<ShoppingCartLayout />} />
-          <Route path="/checkout" element={<CheckoutLayout />} /> {/* Add Checkout route */}
+          <Route path="/checkout" element={<CheckoutLayout />} /> 
+          <Route path="/target" element={<Products />}/>
         </Routes>
-        <Footer /> {/* Footer outside Routes to show on all pages */}
+        <Footer /> 
       </div>
     </Router>
   );
 }
 
-// MainLayout component to include Hero and Products
+
 const MainLayout = () => (
   <>
     <Hero />
@@ -34,17 +35,17 @@ const MainLayout = () => (
   </>
 );
 
-// ProductDescriptionLayout component to include only ProductDescription
+
 const ProductDescriptionLayout = () => (
   <ProductDescription />
 );
 
-// ShoppingCartLayout component to include only ShoppingCart
+
 const ShoppingCartLayout = () => (
   <ShoppingCart />
 );
 
-// CheckoutLayout component to include only Checkout
+
 const CheckoutLayout = () => (
   <Checkout />
 );

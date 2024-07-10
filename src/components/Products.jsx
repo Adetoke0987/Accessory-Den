@@ -27,7 +27,7 @@ const Products = () => {
   ];
 
   return (
-    <section className={styles.productsSection}>
+    <section id="target-section" className={styles.productsSection}>
       <h2 className={styles.productsTitle}>Wristwatch for you!</h2>
       <div className={styles.productsList}>
         {products.map((product) => (

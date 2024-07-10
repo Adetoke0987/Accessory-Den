@@ -6,7 +6,9 @@ import './styles/Header.css';
 const Header = () => {
   return (
     <header className="header">
+      <Link to= '/' className='header-link'> 
       <div className="header-logo">Accessory Den</div>
+      </Link>
       <nav className="header-nav">
         <a href="#products">Products</a>
         <a href="#contact">Contact Us</a>
@@ -18,7 +20,7 @@ const Header = () => {
           <span className="icon-label">Account</span>
         </div>
         <div className="header-icon">
-        <Link to="/cart">
+        <Link to="/cart" className="custom-link">
             <FaShoppingCart className="icon" />
             <span className="icon-label">Cart</span>
           </Link>
