@@ -1,8 +1,13 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+// src/components/ProductCard.js
+import React, { useContext } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { CartContext } from './CartContext';
 import styles from './styles/Products.module.css';
 
 const ProductCard = ({ id, image, name, rating, collection, price }) => {
+  const { addToCart } = useContext(CartContext);
+  const navigate = useNavigate();
+
   const renderStars = () => {
     const stars = [];
     for (let i = 1; i <= 5; i++) {
@@ -13,6 +18,11 @@ const ProductCard = ({ id, image, name, rating, collection, price }) => {
       );
     }
     return stars;
+  };
+
+  const handleAddToCart = () => {
+    addToCart({ id, image, name, rating, collection, price });
+    navigate('/cart');
   };
 
   return (
@@ -26,7 +36,7 @@ const ProductCard = ({ id, image, name, rating, collection, price }) => {
       </div>
       <div className={styles.productCollection}>{collection}</div>
       <div className={styles.productPrice}>NGN{price}</div>
-      <button className={styles.productButton}>Add to Cart</button>
+      <button className={styles.productButton} onClick={handleAddToCart}>Add to Cart</button>
     </div>
   );
 };

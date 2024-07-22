@@ -1,14 +1,11 @@
-import React, { useState } from 'react';
+// src/components/ShoppingCart.js
+import React, { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { CartContext } from './CartContext';
 import './styles/ShoppingCart.css';
 
 const ShoppingCart = () => {
-  const initialCart = [
-    { id: 1, image: 'path/to/image1', description: 'Eclipse Chrono', price: 45000, quantity: 1 },
-    { id: 2, image: 'path/to/image2', description: 'Luxe Timepiece', price: 60000, quantity: 1 },
-  ];
-
-  const [cart, setCart] = useState(initialCart);
+  const { cart, setCart } = useContext(CartContext);
   const navigate = useNavigate();
 
   const handleQuantityChange = (id, delta) => {
@@ -64,7 +61,6 @@ const ShoppingCart = () => {
         </tbody>
       </table>
 
-      {/* New Information */}
       <div className="summary-row">
         <div className="summary-item">
           <span>Discount</span>
@@ -84,7 +80,6 @@ const ShoppingCart = () => {
         </div>
       </div>
 
-      {/* Coupon and Checkout */}
       <div className="coupon-checkout">
         <div className="coupon">
           <label htmlFor="coupon-code">Coupon Code:</label>
